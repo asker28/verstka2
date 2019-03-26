@@ -4,6 +4,7 @@
 }
 body{
   font-family: 'Poppins', sans-serif;
+  width: 1500px;
 }
 li{
   list-style: none;
@@ -116,7 +117,54 @@ ul{
   color: #fff;
 }
 
-
+.portfolio{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 75px;
+  text-align: center;
+}
+.portfolio h4{
+  display: inline-block;
+  background-color: #424147;
+  padding: 0 8px;
+  font-size: 18px;
+  color: #ffea00;
+  margin-bottom: 30px;
+}
+.portfolio p{
+  color: #424147;
+  font-size: 16px;
+  font-weight: 600;
+}
+.portfolio img{
+  max-height: 230px;
+  height: 100%;
+  max-width: 100%;
+}
+.toggles{
+  margin: 25px 0 30px 0;
+}
+.toggles button{
+  border: none;
+  color: #424147;
+  cursor: pointer;
+  font-style: 16px;
+  margin-top: 20px 5px;
+  background-color: transparent;
+}
+.toggles button:after{
+  content: ' / ';
+}
+.toggles button:last-of-type:after{
+  content: '';
+}
+.portfolio .posts{
+  display: grid;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 35px;
+}
 
 
 @media screen and (max-width: 420px) {
